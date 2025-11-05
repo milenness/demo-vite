@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+        <symbol id="icon-subscribe" viewBox="0 0 37 32">
+            <path  d="m16 2.524 7.689 7.627L16 17.778l2.503 2.524 10.235-10.151L18.503 0 16 2.524z" style="fill:var(--color1, #fff)"/>
+            <path  d="M9.614 0 7.111 2.524l7.689 7.627-7.689 7.627 2.503 2.524 10.235-10.151L9.614 0z" style="fill:var(--color1, #fff)"/>
+        </symbol>
+    </defs>
+</svg>
