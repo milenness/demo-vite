@@ -83,7 +83,12 @@
     position: relative;
 }
 
+.subscribe-input:focus::placeholder {
+    opacity: 0;
+}
+
 .subscribe-input:user-invalid:required {
+    color: #7F1C1C;
     border-color: #7F1C1C;
 }
 
@@ -125,6 +130,10 @@
 
 .subscribe-btn:hover {
     opacity: 0.5;
+}
+
+.subscribe-btn:active {
+    box-shadow: none;
 }
 
 @media only screen and (min-width: 768px) {
