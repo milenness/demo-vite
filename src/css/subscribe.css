@@ -44,12 +44,12 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 16px;
-
 }
 
 @media only screen and (min-width: 768px) {
     .sub-form {
         flex-direction: row;
+        align-items: center;
         gap: 24px;
     }
 }
@@ -140,6 +140,14 @@
     }
 }
 
+.policy-link {
+    display: inline-block;
+    transition: color 250ms ease-in-out;
+}
+
+.policy-link:hover {
+    color: #54524E;
+}
 
 .subscribe-icon {
     fill: var(--color-white);
@@ -155,7 +163,6 @@
     line-height: 1.5;
     color: rgba(11, 8, 3, 0.6);
 }
-
 
 .subscribe-img {
     border-radius: 40px;
