@@ -71,6 +71,7 @@
 
 }
 
+
 @media only screen and (min-width: 768px) {
     .subscribe-input {
         width: 339px;
@@ -78,8 +79,31 @@
     }
 }
 
-.subscribe-input:user-invalid {
+.input-wrapper {
+    position: relative;
+}
+
+.subscribe-input:user-invalid:required {
     border-color: #7F1C1C;
+}
+
+.subscribe-input:user-invalid:required::placeholder {
+    color: #7F1C1C;
+}
+
+.error-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(60%);
+    font-size: 12px;
+    color: #7F1C1C;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.subscribe-input:user-invalid:required~.error-text {
+    opacity: 1;
 }
 
 .subscribe-btn {
