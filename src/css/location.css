@@ -1,4 +1,5 @@
-.location {
+.section-location {
+  padding: 64px 0;
 }
 .container {
 }
@@ -18,23 +19,35 @@
 }
 .location-text {
 }
-.location-contact {
+.location-contact-container {
+  margin: 0 0 32px;
 }
 .location-contact-item {
 }
 .location-contact-list {
 }
 .location-contact-icon {
+  fill: #0b0803;
 }
+
 .location-contact-title {
+  margin: 0 0 8px;
 }
 .location-contact-link {
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 .location-btn {
+  background-color: transparent;
+  padding: 0;
 }
 .location-btn-link {
 }
 .location-btn-icon {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
 }
 .location-img {
 }

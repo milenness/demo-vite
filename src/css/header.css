@@ -46,7 +46,7 @@
 
 .menu-link {
   font-size: 16px;
-  transition: color 200ms ease-in;
+  transition: color 250ms ease-in-out;
 }
 
 .menu-link:hover,
