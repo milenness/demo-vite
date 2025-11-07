@@ -77,7 +77,6 @@
   .logo-socials-container {
     display: flex;
     flex-direction: row;
-    gap: 32px;
     margin-bottom: 32px;
   }
 
@@ -105,10 +104,13 @@
 
   .footer-container {
     flex-direction: row;
-    justify-content: space-evenly;
+    padding: 32px 48px;
   }
   .logo-socials-container {
-    margin-right: 540px;
+    margin-right: auto;
     margin-bottom: 0;
+  }
+  .social-link {
+    display: flex;
   }
 }
