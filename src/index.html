@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeJoy</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoffeeJoy</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
 
-  <!-- Normalize CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body>
+    <load src="./partials/header.html" />
 
-<body>
-  <load src="./partials/header.html" />
+    <main>
+      <load src="./partials/hero.html" />
+      <load src="./partials/welcome.html" />
+      <load src="./partials/quality.html" />
+      <load src="./partials/experience.html" />
+      <load src="./partials/subscribe.html" />
+      <load src="./partials/testimonials.html" />
+      <load src="./partials/location.html" />
+    </main>
 
-  <main>
-    <load src="./partials/hero.html" />
-    <load src="./partials/welcome.html" />
-    <load src="./partials/quality.html" />
-    <load src="./partials/experience.html" />
-    <load src="./partials/subscribe.html" />
-    <load src="./partials/testimonials.html" />
-    <load src="./partials/location.html" />
-  </main>
+    <load src="./partials/footer.html" />
 
-  <load src="./partials/footer.html" />
+    <load src="./partials/mobile_menu.html" />
+    <load src="./partials/modal_welcome.html" />
 
-  <load src="./partials/mobile_menu.html" />
-  <load src="./partials/modal_welcome.html" />
-
-  <script src="./js/mobile-menu.js"></script>
-</body>
-
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/light-dark.js"></script>
+  </body>
 </html>
