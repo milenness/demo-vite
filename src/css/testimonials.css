@@ -35,7 +35,7 @@
   border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 32px;
   padding: 32px;
-  width: 288px;
+  width: 100%;
   min-width: 265px;
   background-color: #c29d84;
 }
@@ -44,6 +44,7 @@
   .testimonials-cards {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 253px;
     width: calc((100% - 24px) / 2);
   }
@@ -82,7 +83,7 @@
   fill: none;
 }
 
-.testimonials-descr {
+.testimonials-box {
   margin-bottom: 24px;
 }
 
