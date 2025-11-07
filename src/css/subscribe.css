@@ -9,6 +9,16 @@
     gap: 32px;
 }
 
+.sub-form-container {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .sub-form-container {
+        width: 640px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .subscribe-container {
         align-items: flex-start;
@@ -44,12 +54,12 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 16px;
-
 }
 
 @media only screen and (min-width: 768px) {
     .sub-form {
         flex-direction: row;
+        align-items: center;
         gap: 24px;
     }
 }
@@ -71,6 +81,7 @@
 
 }
 
+
 @media only screen and (min-width: 768px) {
     .subscribe-input {
         width: 339px;
@@ -78,8 +89,36 @@
     }
 }
 
-.subscribe-input:user-invalid {
+.input-wrapper {
+    position: relative;
+}
+
+.subscribe-input:focus::placeholder {
+    opacity: 0;
+}
+
+.subscribe-input:user-invalid:required {
+    color: #7F1C1C;
     border-color: #7F1C1C;
+}
+
+.subscribe-input:user-invalid:required::placeholder {
+    color: #7F1C1C;
+}
+
+.error-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(90%);
+    font-size: 12px;
+    color: #7F1C1C;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.subscribe-input:user-invalid:required~.error-text {
+    opacity: 1;
 }
 
 .subscribe-btn {
@@ -103,6 +142,10 @@
     opacity: 0.5;
 }
 
+.subscribe-btn:active {
+    box-shadow: none;
+}
+
 @media only screen and (min-width: 768px) {
     .subscribe-btn {
         width: 158px;
@@ -116,6 +159,14 @@
     }
 }
 
+.policy-link {
+    display: inline-block;
+    transition: color 250ms ease-in-out;
+}
+
+.policy-link:hover {
+    color: #54524E;
+}
 
 .subscribe-icon {
     fill: var(--color-white);
@@ -132,7 +183,14 @@
     color: rgba(11, 8, 3, 0.6);
 }
 
-
 .subscribe-img {
     border-radius: 40px;
+}
+
+.subscribe-img {
+    width: 100%;
+}
+
+.sub-img-wrapper {
+    width: 100%;
 }

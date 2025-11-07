@@ -8,9 +8,11 @@
           today!
         </p>
         <form class="sub-form">
-          <label class="subscribe-label" for="sub">
+          <label class="subscribe-label visually-hidden" for="sub">Email:</label>
+          <div class="input-wrapper">
             <input id="sub" class="subscribe-input" type="email" placeholder="Your Email Here" required />
-          </label>
+            <span class="error-text">Use correct e-mail format</span>
+          </div>
           <button class="subscribe-btn">
             Subscribe
             <svg class="subscribe-icon" width="24" height="24">
@@ -18,24 +20,29 @@
             </svg>
           </button>
         </form>
-        <p class="subscribe-info">By clicking Get Started, you agree to our Terms and
-          Conditions.</p>
+        <p class="subscribe-info">By clicking Get Started, you agree to our
+          <a href="#" class="policy-link" target="_blank'">
+            Terms and Conditions.
+          </a>
+        </p>
       </div>
-      <picture>
+
+      <picture class="sub-img-wrapper">
         <source media="(min-width: 1440px)" srcset="
-          ./img/subscribe/sub-img-comp.jpg 1x,
-          ./img/subscribe/sub-img-comp@2x.jpg 2x
-        " />
+            /img/subscribe/sub-img-comp@1x.jpg 1x,
+            /img/subscribe/sub-img-comp@2x.jpg 2x
+          " />
         <source media="(min-width: 768px)" srcset="
-          ./img/subscribe/sub-img-tablet.jpg 1x,
-          ./img/subscribe/sub-img-tablet@2x.jpg 2x
-        " />
+            /img/subscribe/sub-img-tablet@1x.png 1x,
+            /img/subscribe/sub-img-tablet@2x.png 2x
+          " />
         <source media="(min-width: 320px)" srcset="
-          ./img/subscribe/sub-img.jpg 1x,
-          ./img/subscribe/sub-img@2x.jpg 2x
-        " />
-        <img class="subscribe-img" src="/img/subscribe/sub-img.jpg" alt="comunity photo" max-width="288px" />
+            /img/subscribe/sub-img-tel@1x.png 1x,
+            /img/subscribe/sub-img-tel@2x.png 2x
+          " />
+        <img class="subscribe-img" src="/img/subscribe/sub-img-comp@1x.jpg" alt="comunity photo" />
       </picture>
+
     </div>
   </div>
 </section>
