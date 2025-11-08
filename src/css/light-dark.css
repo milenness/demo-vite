@@ -139,6 +139,10 @@ body {
   stroke: #e0cbb4;
 }
 
+[data-theme='dark'] .social-icon {
+  fill: #E0CBB4;
+}
+
 /* Dark theme: location icon */
 [data-theme='dark'] .location-contact-icon {
   fill: #E0CBB4;
