@@ -1,28 +1,33 @@
+/* === DARK THEME VARIABLES === */
 [data-theme='dark'] {
   --bg-color: #0b0803;
   --text-color: #e0cbb4;
   --border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* === SMOOTH BODY TRANSITION === */
 body {
   transition: background-color 0.6s ease, color 0.6s ease;
 }
 
+/* === DARK MODE BACKGROUND & TEXT === */
 [data-theme='dark'] body {
   background-color: #130a00;
   color: #e0cbb4;
 }
 
+/* === CUSTOM SECTION COLOR IN DARK MODE === */
 [data-theme='dark'] .testimonials-cards {
   background-color: #946d53;
 }
 
+/* === THEME TOGGLE BUTTON === */
 .theme-toggle {
   position: fixed;
-  top: 14px;
+  top: 20px;
   left: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1.5px solid var(--border-color);
   background: var(--bg-color);
@@ -37,17 +42,20 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* === BUTTON HOVER EFFECT === */
 .theme-toggle:hover {
   transform: rotate(15deg) scale(1.08);
 }
 
+/* === ICON WRAPPER === */
 .theme-toggle .icon-wrapper {
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.theme-toggle .icon {
+/* === SHARED ICON STYLES === */
+.theme-toggle .icon-dark {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -56,7 +64,7 @@ body {
   transition: opacity 0.6s ease, transform 0.6s ease, filter 0.4s ease;
 }
 
-/* Сонце */
+/* === SUN ICON (LIGHT MODE) === */
 .theme-toggle .sun {
   opacity: 1;
   transform: rotate(0deg) scale(1);
@@ -64,7 +72,7 @@ body {
   filter: drop-shadow(0 0 0px transparent);
 }
 
-/* Місяць */
+/* === MOON ICON (HIDDEN INITIALLY) === */
 .theme-toggle .moon {
   opacity: 0;
   transform: rotate(90deg) scale(0.5);
@@ -72,7 +80,7 @@ body {
   filter: drop-shadow(0 0 0px transparent);
 }
 
-/* Ефект світіння при наведенні */
+/* === HOVER GLOW EFFECTS === */
 .theme-toggle:hover .sun {
   filter: drop-shadow(0 0 8px #ffde73);
 }
@@ -81,7 +89,7 @@ body {
   filter: drop-shadow(0 0 8px #c5e4ff);
 }
 
-/* Темна тема — навпаки */
+/* === SWITCH SUN / MOON ON DARK THEME === */
 [data-theme='dark'] .theme-toggle .sun {
   opacity: 0;
   transform: rotate(90deg) scale(0.5);
@@ -92,6 +100,7 @@ body {
   transform: rotate(0deg) scale(1);
 }
 
+/* === LOGO COLOR IN DARK MODE === */
 [data-theme='dark'] {
   --logo-color: #eadfd6;
 }
@@ -100,8 +109,47 @@ body {
   fill: var(--logo-color);
 }
 
+/* === LOGO COLOR FOR SYSTEM DARK MODE === */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     --logo-color: #eadfd6;
+  }
+}
+
+/* === FADE ANIMATION FOR TOGGLE BUTTON === */
+.theme-toggle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.theme-toggle.fade-in {
+  animation: fadeIn 0.4s forwards;
+}
+
+.theme-toggle.fade-out {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
   }
 }
