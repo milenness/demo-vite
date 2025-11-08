@@ -1,0 +1,138 @@
+/*  Dark Theme Variables */
+[data-theme='dark'] {
+  --bg-color: #0b0803;
+  --text-color: #e0cbb4;
+  --border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Smooth transition between light/dark */
+body {
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Body styles for dark theme */
+[data-theme='dark'] body {
+  background-color: var(--color-coffee-darkest);
+  color: #e0cbb4;
+  fill: #e0cbb4;
+}
+
+/* Testimonials background in dark mode */
+[data-theme='dark'] .testimonials-cards {
+  background-color: #946d53;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 14px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.6s ease, border-color 0.6s ease,
+    transform 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for toggle button */
+.theme-toggle:hover {
+  transform: rotate(15deg) scale(1.08);
+}
+
+/* Icon wrapper inside the toggle */
+.theme-toggle .icon-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+/* Styles for icons (sun/moon) */
+.theme-toggle .icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.4s ease;
+}
+
+/* Sun icon (light mode) */
+.theme-toggle .sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  color: #f9b700;
+  filter: drop-shadow(0 0 0px transparent);
+}
+
+/* Moon icon (dark mode) */
+.theme-toggle .moon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+  color: #f5f2e7;
+  filter: drop-shadow(0 0 0px transparent);
+}
+
+/* Glow effect on hover */
+.theme-toggle:hover .sun {
+  filter: drop-shadow(0 0 8px #ffde73);
+}
+
+.theme-toggle:hover .moon {
+  filter: drop-shadow(0 0 8px #c5e4ff);
+}
+
+/* Dark theme — reverse icons (show moon, hide sun) */
+[data-theme='dark'] .theme-toggle .sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+[data-theme='dark'] .theme-toggle .moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* Auto dark mode (system preference) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .nav-logo {
+    fill: var(--logo-color);
+  }
+}
+
+/* Dark theme: footer */
+[data-theme='dark'] .footer {
+  border-top: 2px solid #0b0803;
+  background-color: #443022;
+}
+
+/* Dark theme: footer container */
+[data-theme='dark'] .footer-container {
+  background-color: #332317;
+  border: 2px solid #0b0803;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+}
+
+/* Dark theme: header */
+[data-theme='dark'] .header {
+  border-bottom: 2px solid #0b0803;
+  background-color: #332317;
+}
+
+/* Dark theme: subscribe input */
+[data-theme='dark'] .subscribe-input {
+  background-color: #946d53;
+}
+
+/* Dark theme: star icon */
+[data-theme='dark'] .icon-star {
+  stroke: #e0cbb4;
+}
