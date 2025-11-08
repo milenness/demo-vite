@@ -11,6 +11,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms ease-in-out;
+}
+
+.nav-logo:hover,
+.nav-logo:focus {
+  fill: #54524E;
 }
 
 .burger-button {
