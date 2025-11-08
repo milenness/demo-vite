@@ -116,7 +116,7 @@ body {
 
 /* Dark theme: footer container */
 [data-theme='dark'] .footer-container {
-  background-color: #0b0803;
+  background-color: #332317;
   border: 2px solid #0b0803;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
 }
