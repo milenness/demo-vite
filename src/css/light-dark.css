@@ -52,10 +52,11 @@ body {
 
 @media screen and (min-width:1440px) {
   .theme-toggle {
-    width: 30px;
-    height: 30px;
+    left: 10px;
     top: 20px;
-    right: 16px;
+    position: fixed;
+    width: 25px;
+    height: 25px;
   }
 }
 
