@@ -1,0 +1,147 @@
+.section-location {
+    padding: 64px 0;
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-cotainer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.location-content {
+    margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-content {
+        margin-bottom: 0;
+    }
+}
+
+.tagline-wrapper {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.location-title {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-title {
+        font-size: 48px;
+    }
+}
+
+.location-wrapper-text {
+    margin-bottom: 40px;
+}
+
+.location-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .location-contact-list {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-contact-list {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .location-contact-item {
+        flex-basis: calc((100% - 80px) / 3);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-contact-item {
+        flex-basis: 100%;
+    }
+}
+
+.location-contact-icon {
+    fill: #0b0803;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.location-contact-title {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.location-contact-link {
+    font-size: 16px;
+    text-decoration: underline;
+    transition: color 250ms ease-in-out;
+}
+
+.location-contact-link:hover,
+.location-contact-link:focus {
+    fill: #54524e;
+    color: #54524e;
+}
+
+.location-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.navigation-icon {
+    display: flex;
+    transition: fill 250ms ease-in-out;
+}
+
+.location-link {
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 250ms ease-in-out;
+}
+
+.location-link:hover,
+.location-link:focus {
+    color: #54524e;
+    fill: #54524e;
+}
+
+.link-text {
+    margin-right: 8px;
+}
+
+.location-map {
+    display: flex;
+    width: 100%;
+    height: 307px;
+    border-radius: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .location-map {
+        height: 377px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .location-map {
+        width: 869px;
+        height: 697px;
+    }
+}
