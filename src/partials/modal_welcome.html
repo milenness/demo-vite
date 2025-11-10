@@ -1,26 +1,42 @@
 <div class="modal-backdrop">
-    <div class="modal-welcome">
-        <button class="close-btn-backdrop" type="button">
-            <svg class="close-icon" width="32" height="32">
-                <use href="/img/icons.svg#icon-close"></use>
-            </svg>
-        </button>
+  <div class="modal-welcome">
+    <button class="close-btn-backdrop" type="button">
+      <svg class="close-icon" width="32" height="32">
+        <use href="/img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
 
-        <p class="modal-title">Welcome to the world of CoffeeJoy!</p>
+    <p class="modal-title">Welcome to the world of CoffeeJoy!</p>
 
-        <p class="modal-text">Fresh brews, special offers, and cozy updates are coming your way.</p>
+    <p class="modal-text">
+      Fresh brews, special offers, and cozy updates are coming your way.
+    </p>
 
-        <picture class="modal-photo">
-            <source media="(min-width: 320px)" srcset="/img/modal_welcome/modal-img-tel@1x.png 1x,
-                                /img/modal_welcome/modal-img-tel@2x.png 2x" />
+    <picture class="modal-photo">
+      <source
+        srcset="
+          /img/modal_welcome/modal-img-tel@1x.png 1x,
+          /img/modal_welcome/modal-img-tel@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
 
-            <source media="(min-width: 768px)" srcset="/img/modal_welcome/modal-img-tabl-desk@1x.png 1x,
-                    /img/modal_welcome/modal-img-tabl-desk@2x.png 2x" />
+      <source
+        srcset="
+          /img/modal_welcome/modal-img-tabl-desk@1x.png 1x,
+          /img/modal_welcome/modal-img-tabl-desk@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
 
-            <img class="modal-img" src="/img/modal_welcome/modal-img-tel@1x.png" alt="welcome photo" width="644"
-                height="374" />
-        </picture>
+      <img
+        class="modal-img"
+        src="/img/modal_welcome/modal-img-tel@1x.png"
+        alt="welcome photo"
+        sizes="(min-width: 1440px) 866px, (min-width: 768px) 704px, 288px"
+      />
+    </picture>
 
-        <button class="modal-button btn" type="button">Close</button>
-    </div>
+    <button class="modal-button btn" type="button">Close</button>
+  </div>
 </div>
