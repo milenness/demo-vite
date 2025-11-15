@@ -12,17 +12,17 @@
       <path d="M5.333 8h21.333v2.667H5.333zm0 6.667h21.333v2.667H5.333zm0 6.666h21.333V24H5.333z"/>
     </symbol>
 
-      <symbol id="icon-sun" viewBox="0 0 24 24">
+    <symbol id="icon-sun" viewBox="0 0 24 24">
     <path
       d="M6.995 12a5.007 5.007 0 1 0 10.014 0A5.007 5.007 0 0 0 6.995 12ZM11 19h2v3h-2Zm0-17h2v3h-2ZM2 11h3v2H2Zm17 0h3v2h-3ZM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414Zm10.605-13.434 2.122-2.122 1.414 1.414-2.122 2.122ZM6.344 7.759 4.223 5.637 5.638 4.223l2.12 2.122Zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414Z"
     />
-  </symbol>
-
-  <symbol id="icon-moon" viewBox="0 0 24 24">
+    </symbol>
+    
+    <symbol id="icon-moon" viewBox="0 0 24 24">
     <path
       d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
     />
-  </symbol>
+    </symbol>
 
   <!-- Welcome -->
     <symbol id="icon-map-pin" viewBox="0 0 32 32">
